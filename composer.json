@@ -1,0 +1,22 @@
+{
+    "name": "pief/mail_storage_monitoring",
+    "type": "roundcube-plugin",
+    "description": "Shows users an error and disables UI if mail storage is unavailable.",
+    "license": "GPLv3+",
+    "authors": [
+        {
+            "name": "Pieter Hollants",
+            "email": "pieter@hollants.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pief/roundcube-mail-storage-monitoring"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "roundcube/plugin-installer": ">=0.1.3"
+    }
+}

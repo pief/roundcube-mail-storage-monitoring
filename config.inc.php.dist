@@ -1,0 +1,4 @@
+<?php
+
+// The mountpoint of the mail storage to check
+$config['mail_storage_monitoring_mountpoint'] = '/var/lib/dovecot/users';

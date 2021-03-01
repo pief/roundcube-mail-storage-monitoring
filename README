@@ -1,0 +1,35 @@
+
+                  mail_storage_monitoring Roundcube plugin
+          Copyright (c) 2021 Pieter Hollants <pieter@hollants.com>
+       Licensed under the GNU Lesser Public License (LGPL) version 3
+
+
+WHAT IS IT?
+
+This is a plugin for the Roundcube Webmail web application for VERY
+special (read: seldom/strange) setups only. It implements a simple is it
+mounted or not" monitoring for a mail server's mail storage. This means
+1. the IMAP server must run on the same host as the Web server
+2. the mail storage must be a seperately mountable volume.
+
+If the storage is not mounted, an error message is permanently shown in
+the lower right corner and most controls of the Roundcube UI get disabled
+including the ability to login.
+
+
+INSTALLATION
+
+1. If you're not using "composer" to install the plugin: create a directory
+   "plugins/mail_storage_monitoring" in your Roundcube installation and copy
+   all files there.
+2. Inside that directory, copy "config.inc.php.dist" to "config.inc.php"
+   and edit it. Change the config variable inside appropriately.
+3. Add "mail_storage_monitoring" to the $config['plugins'] array in
+   Roundcube's own config/config.inc.php.
+
+
+LICENSE
+
+This software is licensed under the GNU General Public License (GPL),
+version 3. See http://www.gnu.org/licenses/gpl-3.0.txt or the included file
+LICENSE.
